@@ -1,0 +1,32 @@
+
+<!-- Basic HTML5 document structure -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Function</title>
+	<!-- Internal CSS for styling the page and elements -->
+	<style>
+		body { font-family: Arial, sans-serif; background: #f0f8ff; color: #222; }
+		button { background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+		button:hover { background: #388e3c; }
+		#demo { margin-top: 20px; font-size: 1.2em; color: #1a237e; }
+	</style>
+</head>
+<body>
+	<h1>JavaScript Function</h1>
+
+	<!-- Button that calls showCustomMessage() when clicked -->
+	<button onclick="showCustomMessage()">Show Message</button>
+
+	<!-- Paragraph where the result of showCustomMessage() will be displayed -->
+	<p id="function"></p>
+
+	<!-- Paragraph for += operator concatenation example. Calls myFunction() when clicked. -->
+	<p id="Concatenate" onclick="myFunction()">Click Here!</p>
+
+	<!-- Link to the external JavaScript file -->
+	<script src="js/main.js"></script>
+</body>
+</html>
