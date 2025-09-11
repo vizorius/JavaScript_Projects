@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Math Operators</title>
+	<style>
+		body { font-family: Arial, sans-serif; background: #f9f9f9; color: #222; }
+		button { background: #1976d2; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+		button:hover { background: #0d47a1; }
+		.result { margin-top: 20px; font-size: 1.2em; color: #b71c1c; }
+	</style>
+    <script src="js/main.js"></script>
+</head>
+<body>
+	<div style="display: flex; flex-direction: row; align-items: flex-start; justify-content: left; gap: 12px; min-height: 45vh; width: 75vw;">
+		<div>
+			<h3>JavaScript Math Addition</h3>
+			<button onclick="addNumbers()">Add Numbers</button>
+			<p id="Math1" class="result"></p>
+		</div>
+		<div>
+			<h3>JavaScript Math Subtraction</h3>
+			<button onclick="subtractNumbers()">Subtract Numbers</button>
+			<p id="Math2" class="result"></p>
+		</div>
+		<div>
+			<h3>JavaScript Math Multiplication</h3>
+			<button onclick="multiplyNumbers()">Multiply Numbers</button>
+			<p id="Math3" class="result"></p>
+		</div>
+		<div>
+			<h3>JavaScript Math Division</h3>
+			<button onclick="divideNumbers()">Divide Numbers</button>
+			<p id="Math4" class="result"></p>
+		</div>
+		<div>
+			<h3>JavaScript Multiple Operations</h3>
+			<button onclick="multipleOperations()">Multiple Operations</button>
+			<p id="Math5" class="result"></p>
+		</div>
+		<div>
+			<h3>JavaScript Modulus Operator</h3>
+			<button onclick="modulusNumbers()">Modulus Operator</button>
+			<p id="Math6" class="result"></p>
+		</div>
+        <div>
+			<h3>JavaScript Unary Operator</h3>
+			<button onclick="unaryOperator()">Unary Negation</button>
+			<p id="Math7" class="result"></p>
+		</div>
+    </div>
+    <div style="display: flex; flex-direction: row; align-items: flex-start; justify-content: left; gap: 12px; min-height: 45vh; width: 75vw;">
+       <div>
+			<h3>JavaScript Increment Operator</h3>
+			<button onclick="incrementOperator()">Increment</button>
+			<p id="Math8" class="result"></p>
+		</div>
+		<div>
+			<h3>JavaScript Decrement Operator</h3>
+			<button onclick="decrementOperator()">Decrement</button>
+			<p id="Math9" class="result"></p>
+		</div>
+        <div>
+			<h3>JavaScript Math.random()</h3>
+			<button onclick="randomNumber()">Random Number</button>
+			<p id="Math10" class="result"></p>
+		</div>
+		<div>
+            <h3>JavaScript Math Object Method</h3>
+            <button onclick="mathSqrt()">Square Root of 49</button>
+            <p id="Math11" class="result"></p>
+        </div> 
+    </div>
+</body>
+</html>
