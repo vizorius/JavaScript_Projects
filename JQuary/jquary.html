@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Basic jQuery Example</title>
+  <!-- Link to the Google CDN jQuery file -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script>
+    // Wait until the document is loaded before running any jQuery
+    $(document).ready(function() {
+      // Append content to the HTML body
+      $("html").append(`
+        <body>
+          <div id="container">
+            <div id="inner">
+              <h1>Basic jQuery</h1>
+              <p id="p1">Paragraph 1</p>
+              <p id="p2">Paragraph 2</p>
+              <p id="p3">Paragraph 3</p>
+            </div>
+          </div>
+        </body>
+      `);
+
+      // Using jQuery to add CSS to the HTML element with id = 'p2'
+      $("#p2").css({ "color": "red" });
+
+      // Click function to hide the h1 element when the element with id = 'p3' is clicked
+      $("#p3").click(function() {
+        $("h1").hide();
+      });
+    });
+  </script>
+</head>
+</html>
