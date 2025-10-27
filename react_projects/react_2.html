@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React Counter Example</title>
+  <!-- React and ReactDOM from CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+  <div id="My_React_Code"></div>
+
+  <script type="text/javascript">
+    const { useState, useEffect } = React;
+
+    function Counter() {
+      const [timePassed, setTimePassed] = useState(0);
+
+      useEffect(() => {
+        const start = Date.now();
+        const interval = setInterval(() => {
+          setTimePassed(Date.now() - start);
+        }, 50);
+        return () => clearInterval(interval);
+      }, []);
+
+      const secondsPassed = Math.round(timePassed / 100) / 10;
+      return React.createElement("p", null, `My React code started running ${secondsPassed.toFixed(1)} seconds ago!`);
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("My_React_Code"));
+    root.render(React.createElement(Counter));
+  </script>
+</body>
+</html>
